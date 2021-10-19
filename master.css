@@ -1,0 +1,373 @@
+body{
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-image: linear-gradient(rgba(29, 29, 29, 0.7) 0%, rgba(29, 29, 29, 0.7) 100%), url(img/245420974_558712255198908_2380309178701835910_n.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*----- navbar -----*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(151, 0, 0);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: gray;
+    text-decoration: none;
+    transition: 800ms;
+  }
+
+/*----- listas -----*/
+ul.redes{
+  background-color: #97000056;
+  font-size: xx-large;
+}
+
+/*----- Contenedores -----*/
+
+
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20%;
+  grid-row-gap: 30%;
+  grid-template-columns: auto auto;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 1%;
+  padding-bottom: 10%;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor-titulo{
+  text-align: center;
+}
+
+.titulo{
+  border-radius: 15px;
+  padding: 2%;
+  margin: 5% auto;
+  width: 40%;
+  text-align: center;
+  background-color: rgb(151, 0, 0);
+  color: white;
+}
+
+.contenedor-crear{
+  text-align: center;
+}
+
+.crear{
+  border-radius: 15px;
+  padding: 2%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin: 5% auto;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.623);
+  color: rgb(0, 0, 0);
+}
+
+.contenedor-usuario{
+  text-align: center;
+}
+
+.usuario{
+  border-radius: 15px;
+  padding: 2%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin: 5% auto;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(216, 0, 90, 0.582);
+  color: rgb(0, 0, 0);
+}
+
+.dropbtn {
+  background-color: rgb(151, 0, 0);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu{
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 5%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(151, 0, 0);
+}
+
+/*----- botones -----*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff389b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #ff0080}
+
+.button:active {
+  background-color: #ff0080;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-crear {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #15ff00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-crear:hover {background-color: #059700}
+
+.button-crear:active {
+  background-color: #059700;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-borrar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 9px #999;
+}
+
+.button-borrar:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+.button-borrar:active {
+  background-color: #ffffff;
+  color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-editar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0026ff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 9px #999;
+}
+
+.button-editar:hover {
+  background-color: #ffffff;
+  color: #0026ff;
+}
+
+.button-editar:active {
+  background-color: #ffffff;
+  color: #0026ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.subir {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #15ff00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.subir:hover {background-color: #059700}
+
+.subir:active {
+  background-color: #059700;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-eliminar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #ff0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-eliminar:hover {background-color: #da0000}
+
+.button-eliminar:active {
+  background-color: #da0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-cambiar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffa6a6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-cambiar:hover {background-color: #ecb5b5}
+
+.button-cambiar:active {
+  background-color: #ecb5b5;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*----- otros elementos -----*/
+
+.titulito{
+  color: cyan;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+input{
+  height: 4rem;
+  width: 80%;
+}
+
+input.dato[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.archivo:hover{
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 1000ms;
+  background-color: #555555;
+}
+
+.foto{
+  width: 30%;
+  height: 30%;
+  border-radius: 50px;
+}
+
