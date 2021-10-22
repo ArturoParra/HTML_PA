@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="master.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+</head>
+<body style="background-image: url(img/hexagonos.jpg);">
+    <div id="root">
+        <ul>
+            <li><h4><a href="#home"><i class="fas fa-code"></i> BatizLab</a></h4></li>
+            <li style="float:right"><a href="#about">Cerrar Sesión</a></li>
+            <li style="float:right"><a href="#about">Perfil</a></li>
+            <li style="float:right"><a href="#contact">Más proyectos</a></li>
+            <li style="float:right"><a href="#news">Mis Proyectos</a></li>
+          </ul>
+    </div>
+    <div>
+        <div class="contenedor-usuario">
+            <div class="usuario">
+                <h1>Mi perfil</h1>
+                <br>
+                <br>
+                <img class="foto" src="./img/estudiante.jpg">
+                <br>
+                <br>
+                <button class="button-cambiar">Cambiar contraseña</button>
+                <br>
+                <br>
+                <h3>Datos</h3>
+                <table>
+                    <tr>
+                      <th>Nombre:</th>
+                      <th>Correo:</th>
+                      <th>Boleta:</th>
+                      <th>Usuario de GitHub:</th>
+                    </tr>
+                    <tr>
+                      <td><input class="editar-perfil" type="text"></td>
+                      <td><input class="editar-perfil" type="text"></td>
+                      <td><label>20200801395</label></td>
+                      <td><input class="editar-perfil" type="text"></td>
+                    </tr>
+                  </table>
+                  <hr>
+                  <h3>Redes sociales</h3>
+                  <br>
+                  <br>
+                  <div class="sociales">
+                    <form>
+                        <label><i class="fab fa-instagram"></i> Instagram</label>
+                        <input class="dato" type="text">
+                        <label><i class="fab fa-facebook-f"></i> Facebook</label>
+                        <input class="dato" type="text">
+                        <label><i class="fab fa-github"></i> GitHub</label>
+                        <input class="dato" type="text">
+                    </form>
+                  </div>
+                  
+                  <br>
+                  <br>
+                <button class="button-eliminar">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

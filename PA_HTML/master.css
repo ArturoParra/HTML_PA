@@ -1,0 +1,439 @@
+body{
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/*----- navbar -----*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 195, 255);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: gray;
+    text-decoration: none;
+    transition: 800ms;
+  }
+
+/*----- listas -----*/
+ul.redes{
+  background-color: #97000000;
+  font-size: xx-large;
+}
+ul.redes2{
+  background-color: #97000000;
+  font-size: medium;
+}
+
+/*----- Contenedores -----*/
+
+
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20%;
+  grid-row-gap: 30%;
+  grid-template-columns: auto auto;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 1%;
+  padding-bottom: 10%;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor-titulo{
+  text-align: center;
+}
+
+.titulo{
+  border-radius: 15px;
+  padding: 2%;
+  margin: 5% auto;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(139, 139, 139, 0.527);
+  color: white;
+}
+
+.contenedor-crear{
+  text-align: center;
+}
+
+.crear{
+  border-radius: 15px;
+  padding: 2%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin: 5% auto;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.801);
+  color: rgb(0, 0, 0);
+}
+
+.contenedor-usuario{
+  text-align: center;
+}
+
+.usuario{
+  border-radius: 15px;
+  padding: 2%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin: 5% auto;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(0, 153, 255, 0.493);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.dropbtn {
+  background-color: rgb(0, 195, 255);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: crosshair;
+  border-radius: 15px;
+}
+
+.menu{
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 5%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(156, 156, 156);
+  transition: 1000ms;
+}
+
+.tabla-padre{
+  text-align: center;
+}
+
+.contenedor-tabla{
+  border-radius: 15px;
+  padding: 2%;
+  margin: 5% auto;
+  width: 95%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/*----- botones -----*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0004ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: rgb(0, 195, 255);
+  transition: 500ms;
+}
+
+.button:active {
+  background-color: rgb(0, 195, 255);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-crear {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #0004ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-crear:hover {
+  background-color: rgb(0, 195, 255);
+  transition: 500ms;
+}
+
+.button-crear:active {
+  background-color: rgb(0, 195, 255);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-borrar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(209, 207, 207);
+  background-color: #8a8a8a;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 9px #999;
+}
+
+.button-borrar:hover {
+  background-color: #8a8a8a;
+  transition: 500ms;
+  color: #ff0000;
+}
+
+.button-borrar:active {
+  background-color: #8a8a8a;
+  color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-editar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(209, 207, 207);
+  background-color: #8a8a8a;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 9px #999;
+}
+
+.button-editar:hover {
+  background-color: #8a8a8a;
+  transition: 500ms;
+  color: #0026ff;
+}
+
+.button-editar:active {
+  background-color: #8a8a8a;
+  color: #0026ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.subir {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #0004ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.subir:hover {
+  background-color: rgb(0, 195, 255);
+  transition: 500ms;
+}
+
+.subir:active {
+  background-color: rgb(0, 195, 255);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-eliminar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #0004ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-eliminar:hover {
+  background-color: rgb(0, 195, 255);
+  transition: 500ms;
+}
+
+.button-eliminar:active {
+  background-color: rgb(0, 195, 255);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-cambiar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 195, 255);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-cambiar:hover {
+  background-color: #0004ff;
+  transition: 500ms;
+}
+
+.button-cambiar:active {
+  background-color: #0004ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.botoncito {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0004ff;
+  border: none;
+  border-radius: 15px;
+}
+
+.botoncito:hover {
+  background-color: rgb(0, 195, 255);
+  transition: 500ms;
+}
+
+.botoncito:active {
+  background-color: rgb(0, 195, 255);
+  transform: translateY(4px);
+}
+
+/*----- otros elementos -----*/
+
+.titulito{
+  color: cyan;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+input{
+  height: 4rem;
+  width: 80%;
+}
+
+input.editar-perfil{
+  height: 2rem;
+}
+
+input.dato[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.archivo:hover{
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 1000ms;
+  background-color: #555555;
+}
+
+.foto{
+  width: 30%;
+  height: 30%;
+  border-radius: 50px;
+}
+
